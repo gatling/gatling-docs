@@ -12,7 +12,7 @@ Either way, once launched, you can visit at [http://localhost:1313](http://local
 
 ### Docker-compose
 
-This project provide a `docker-compose.yml` configuration
+This project provides a `docker-compose.yml` configuration
 
 ```console
 docker-compose up
@@ -37,7 +37,7 @@ hugo server
 
 ### Invalid version: unknown revision
 
-In case of issue such as:
+In case of issues such as:
 
 ```
 go: github.com/gatling/gatling.io-doc-theme@v0.0.0-20240222160400-c0fbf7866574: invalid version: unknown revision c0fbf7866574
@@ -58,7 +58,7 @@ Then, run `hugo mod get -u`.
 
 ### Template for shortcode "img" not found
 
-In case of issue such as:
+In case of issues such as:
 
 ```
 failed to extract shortcode: template for shortcode "img" not found
