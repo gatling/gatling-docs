@@ -31,11 +31,13 @@ To deploy your Gatling project on Gatling Enterprise Cloud, follow these steps:
    - [Gatling Plugin with Maven]({{< ref "reference/integrations/build-tools/maven-plugin/#prerequisites" >}})
    - [Gatling Plugin with Gradle]({{< ref "reference/integrations/build-tools/gradle-plugin/#prerequisites" >}})
    - [Gatling Plugin with sbt]({{< ref "reference/integrations/build-tools/sbt-plugin/#prerequisites" >}})
+   - [JavaScript or TypeScript]({{< ref "reference/integrations/build-tools/js-cli/#running-your-simulations-on-gatling-enterprise-cloud" >}})
 2. Use the following command for deployment:
     - [Maven]({{< ref "reference/integrations/build-tools/maven-plugin/#deploying-on-gatling-enterprise-cloud" >}}): `mvn gatling:enterpriseDeploy`
     - [Gradle]({{< ref "reference/integrations/build-tools/gradle-plugin/#deploying-on-gatling-enterprise-cloud" >}}): `gradle gatlingEnterpriseDeploy`
     - [sbt]({{< ref "reference/integrations/build-tools/sbt-plugin/#deploying-on-gatling-enterprise-cloud" >}}): `sbt Gatling/enterpriseDeploy`
-
+    - [JavaScript or TypeScript]({{< ref "reference/integrations/build-tools/js-cli/#deploying-on-gatling-enterprise-cloud" >}}): `npx gatling enterprise-deploy`
+    
 {{< alert tip >}}
 Demo projects are available with a fully configured [Package Descriptor example]({{< ref "#package-descriptor" >}}) for each Build Plugin: [Maven](https://github.com/gatling/gatling-maven-plugin-demo-java/tree/main/.gatling/example.package.conf), [Gradle](https://github.com/gatling/gatling-gradle-plugin-demo-java/tree/main/.gatling/example.package.conf), and [sbt](https://github.com/gatling/gatling-sbt-plugin-demo/tree/main/.gatling/example.package.conf)
 {{< /alert >}}
@@ -66,7 +68,7 @@ You can use a package descriptor file to specify the deployment configuration an
 
 Let's proceed step by step to create a package descriptor configuration and understand the process involved, from a minimal configuration to a fully qualified one.
 
-### Create configuration file
+### Create a configuration file
 
 Add a new directory at the root of your project: `.gatling` and create a new file `.gatling/package.conf`.
 This file will be in [HOCON](https://github.com/lightbend/config/blob/main/HOCON.md) format.
